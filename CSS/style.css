@@ -469,7 +469,13 @@ a {
 	opacity: 0.54;
 }
 
-.field:focus, .field-subscribe:focus, .select:focus, .popup-text-field:focus {
+.field:focus {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 1px solid #b59f5b;
+}
+
+.field-subscribe:focus, .select:focus, .popup-text-field:focus {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	outline: 1px solid #b59f5b;
