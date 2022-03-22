@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <div class="popup popup-active">
+        <div class="popup-container">
+            <form class="popup-close">
+                <button class="popup-close-button">
+                    <span class="popup-close-hint">Кнопка закрытия всплывающего окна</span>
+                </button>
+            </form>
+            <div class="popup-feedback">
+                <h2 class="popup-title">Ваш фидбек</h2>
+                <form class="popup-form">
+                    <div class="popup-form-row">
+                        <label class="popup-form-group">
+                            <span class="popup-form-hint">Как часто вы заходите на сайт?</span>
+                            <select class="select">
+                                <option>Почти каждый день</option>
+                                <option>Раз в несколько дней</option>
+                                <option>Раз в несколько недель</option>
+                                <option>Несколько раз в год</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="popup-form-row">
+                        <span class="popup-form-hint">Вы подписаны на e-mail рассылку?</span>
+                        <label class="popup-radio-group">
+                            <input type="radio" class="radio" name="popup-radio-group" required>
+                            <span class="popup-radio-group-text">Да</span>
+                        </label>
+                        <label class="popup-radio-group">
+                            <input type="radio" class="radio" name="popup-radio-group" required>
+                            <span class="popup-radio-group-text">Нет</span>
+                        </label>        
+                    </div>
+                    <div class="popup-form-row">		
+                        <span class="popup-form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                        <textarea class="popup-text-field" placeholder="Может, больше рецептов?" required></textarea>
+                    </div>
+                    <div class="popup-form-row">
+                        <button class="button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <header class="header">
 		<div class="container">
 			<div class="header-container">
@@ -46,8 +89,8 @@
             <article class="trend-post trend-post-1">
                 <div class="trend-post-content">
                     <ul class="content-post-tags">
-                        <li class="trend-post-item"><a href="#0" class="tag">lifestyle</a></li>
-                        <li class="trend-post-item"><a href="#0" class="tag">interior</a></li>
+                        <li class="content-post-item"><a href="#0" class="tag">lifestyle</a></li>
+                        <li class="content-post-item"><a href="#0" class="tag">interior</a></li>
                     </ul>
                     <h2 class="trend-post-title">
                         <a href="#0" class="trend-post-link">cейчас в тренде: сад  на подоконнике</a>
@@ -57,7 +100,7 @@
             <article class="trend-post trend-post-2">
                 <div class="trend-post-content">
                     <ul class="content-post-tags">
-                        <li class="trend-post-item"><a href="#0" class="tag">food</a></li>
+                        <li class="content-post-item"><a href="#0" class="tag">food</a></li>
                     </ul>
                     <h2 class="trend-post-title">
                         <a href="#0" class="trend-post-link">сыры на красивых  картинках из интернета: какие они на вкус?</a>
@@ -67,8 +110,8 @@
             <article class="trend-post trend-post-3">
                 <div class="trend-post-content">
                     <ul class="content-post-tags">
-                        <li class="trend-post-item"><a href="#0" class="tag">lifestyle</a></li>
-                        <li class="trend-post-item"><a href="#0" class="tag">travel</a></li>
+                        <li class="content-post-item"><a href="#0" class="tag">lifestyle</a></li>
+                        <li class="content-post-item"><a href="#0" class="tag">travel</a></li>
                     </ul>
                     <h2 class="trend-post-title">
                         <a href="#0" class="trend-post-link">собираемся в первый поход в горы</a>
@@ -78,8 +121,8 @@
             <article class="trend-post trend-post-4">
                 <div class="trend-post-content">
                     <ul class="content-post-tags">
-                        <li class="trend-post-item"><a href="#0" class="tag">lifestyle</a></li>
-                        <li class="trend-post-item"><a href="#0" class="tag">travel</a></li>
+                        <li class="content-post-item"><a href="#0" class="tag">lifestyle</a></li>
+                        <li class="content-post-item"><a href="#0" class="tag">travel</a></li>
                     </ul>
                     <h2 class="trend-post-title">
                         <a href="#0" class="trend-post-link">cейчас в тренде: сколько витамина c в лимонах?</a>
@@ -273,12 +316,12 @@
             <section class="sidebar-section">
                 <h3 class="sidebar-title">темы</h3>
                 <ul class="sidebar-categories">
-                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Красота <span class="sidebar-categorie-number">12</span></a></li>
-                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Здоровье <span class="sidebar-categorie-number">4</span></a></li>
-                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Образ жизни <span class="sidebar-categorie-number">145</span></a></li>
-                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Музыка <span class="sidebar-categorie-number">28</span></a></li>
-                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Спорт <span class="sidebar-categorie-number">62</span></a></li>
-                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Йога <span class="sidebar-categorie-number">8</span></a></li>
+                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Красота </a><span class="sidebar-categorie-number">12</span></li>
+                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Здоровье </a><span class="sidebar-categorie-number">4</span></li>
+                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Образ жизни </a><span class="sidebar-categorie-number">145</span></li>
+                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Музыка </a><span class="sidebar-categorie-number">28</span></li>
+                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Спорт </a><span class="sidebar-categorie-number">62</span></li>
+                    <li class="sidebar-categorie"><a href="#0" class="categorie-link">Йога </a><span class="sidebar-categorie-number">8</span></li>
                 </ul>
             </section>
         </aside>
@@ -286,7 +329,12 @@
             <h2 class="shop-title">Наши изделия</h2>
             <div class="good-cards">
                 <article class="good-card">
-                    <img src="images/shop-item-desk1.jpg" alt="Подушка на стуле" class="good-card-image">
+                    <picture>
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="images/shop-item-desk1.jpg">
+                        <img src="images/shop-item-desk1.jpg" alt="Подушка на стуле" class="good-card-image">
+                    </picture>
                     <div class="good-card-info">
                         <h2 class="good-card-title">Подушки на диван</h2>
                         <div class="good-card-text-container">
@@ -306,7 +354,12 @@
                     </div>
                 </article>
                 <article class="good-card">
-                    <img src="images/shop-item-desk2.jpg" alt="Тряпичный зайчик на столе" class="good-card-image">
+                    <picture>
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="images/shop-item-desk2.jpg">
+                        <img src="images/shop-item-desk2.jpg" alt="Тряпичный зайчик на столе" class="good-card-image">
+                    </picture>
                     <div class="good-card-info">
                         <h2 class="good-card-title">Кукла «Зайчик»</h2>
                         <div class="good-card-text-container">
@@ -326,7 +379,12 @@
                     </div>
                 </article>
                 <article class="good-card">
-                    <img src="images/shop-item-desk3.jpg" alt="На столе композиция из рамки и вазы с гербарием" class="good-card-image">
+                    <picture>
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="images/shop-item-desk3.jpg">
+                        <img src="images/shop-item-desk3.jpg" alt="На столе композиция из рамки и вазы с гербарием" class="good-card-image">
+                    </picture>
                     <div class="good-card-info">
                         <h2 class="good-card-title">Шестиугольная рамка</h2>
                         <div class="good-card-text-container">
@@ -371,42 +429,6 @@
                 <a href="#0" class="copyright-text">Copyright © 2009–2019 City Blog LLC.</a>
             </div>
         </footer>
-    </div>
-    <div class="popup popup-active">
-        <div class="popup-feedback">
-            <h2 class="popup-title">Ваш фидбек</h2>
-            <form class="popup-form">
-                <div class="popup-form-row">
-                    <label class="popup-form-group">
-                        <span class="popup-form-hint">Как часто вы заходите на сайт?</span>
-                        <select class="select">
-                            <option>Почти каждый день</option>
-                            <option>Раз в несколько дней</option>
-                            <option>Раз в несколько недель</option>
-                            <option>Несколько раз в год</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="popup-form-row">
-                    <span class="popup-form-hint">Вы подписаны на e-mail рассылку?</span>
-                    <label class="popup-radio-group">
-                        <input type="radio" class="radio" name="popup-radio-group" required>
-                        <span class="popup-radio-group-text">Да</span>
-                    </label>
-                    <label class="popup-radio-group">
-                        <input type="radio" class="radio" name="popup-radio-group" required>
-                        <span class="popup-radio-group-text">Нет</span>
-                    </label>        
-                </div>
-                <div class="popup-form-row">		
-                    <span class="popup-form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                    <textarea class="popup-text-field" placeholder="Может, больше рецептов?" required></textarea>
-                </div>
-                <div class="popup-form-row">
-                    <button class="button">Отправить</button>
-                </div>
-            </form>
-        </div>
     </div>
 </body>
 </html>
