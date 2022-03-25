@@ -32,13 +32,13 @@ select, textarea, input {
 }
 
 /* --------- popup --------- */
-.popup {
-	display: none;
+.popup-active {
+	display: flex;
 }
 
-/* .popup-active {
+.popup {
 	position: fixed;
-  	display: flex;
+	display: none;
 	
 	top: 0;
 	right: 0;
@@ -47,14 +47,10 @@ select, textarea, input {
   	z-index: 50;
 
 	background-color: rgba(0, 0, 0, .6);
-} */
+}
 
 .popup-container {
 	margin: auto;
-}
-
-.popup-close {
-	margin-bottom: 10px;
 }
 
 .popup-close-button {
@@ -62,6 +58,7 @@ select, textarea, input {
 	width: 19px;
 	height: 19px;
 	margin-left: auto;
+	margin-bottom: 10px;
 	border: none;
 
 	background-image: url("../svg/form-x.svg");
@@ -396,8 +393,7 @@ select, textarea, input {
 	max-width: 1200px;
 	padding: 60px 15px;
 
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 
 	display: flex;
     flex-wrap: wrap;
