@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	/* outline: 1px solid red; */
 }
 
 @font-face {
@@ -32,10 +31,6 @@ select, textarea, input {
 }
 
 /* --------- popup --------- */
-.popup-active {
-	display: flex;
-}
-
 .popup {
 	position: fixed;
 	display: none;
@@ -47,6 +42,10 @@ select, textarea, input {
   	z-index: 50;
 
 	background-color: rgba(0, 0, 0, .6);
+}
+
+.popup-active {
+	display: flex;
 }
 
 .popup-container {
@@ -594,7 +593,7 @@ select, textarea, input {
 }
 
 .field {
-	width: 220px;
+	width: calc(100% - 50px);
 	height: 50px;
 	padding: 15px;
 	border: none;
@@ -939,6 +938,10 @@ select, textarea, input {
 	.menu-burger {
 		display: none;
 	}
+
+	.logo-image-mobile {
+		display: none;
+	}
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
@@ -994,6 +997,10 @@ select, textarea, input {
 	.logo-image {
 		width: 157px;
 		min-width: 157px;
+	}
+
+	.logo-image-mobile {
+		display: none;
 	}
 
 	.menu {
@@ -1112,5 +1119,248 @@ select, textarea, input {
 	
 	.socials {
 		margin-bottom: 45px;
+	}
+}
+
+@media (max-width: 640px) {
+	/* ------ popup -------- */
+	.popup-feedback {
+		width: 330px;
+		padding: 25px 25px;
+	}
+
+	.popup-title {
+		font-size: 16px;
+	}
+	
+	.popup-close-button {
+		width: 30px;
+		height: 30px;
+		margin-bottom: 6px;
+	}
+
+	.popup-form-row {
+		margin-bottom: 30px;
+  	}
+
+	.popup-radio-group-text::before {
+		width: 25px;
+		height: 25px;
+		vertical-align: middle;
+	}
+	
+	.popup-radio-group:nth-of-type(n+2) {
+		margin-left: 35px;
+	}
+
+	/* ------- шапка -------- */
+	.header {
+		padding-top: 30px;
+		padding-bottom: 210px;
+
+		background-image: url("../images/banner-mobile.jpg");
+	}
+	
+	.container {
+		max-width: 640px;
+		padding: 0 15px;
+	}
+	
+	.header-container {
+		justify-content: flex-end;
+	}
+
+	.logo {
+		display: none;
+	}
+	
+	.menu {
+		display: none;
+	}
+		
+	.menu-burger {
+		width: 23px;
+		height: 20px;
+		border: none;
+
+		background-image: url("../svg/Btn-Close.svg");
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	
+		cursor: pointer;
+	}
+	
+	.logo-image-mobile {
+		display: block;
+		margin: 175px auto 0;
+		width: 270px;
+		min-width: 270px;
+	}
+	
+	.logo-mobile {
+		display: block;
+
+		text-align: center;
+	}
+	
+	.title {
+		max-width: 300px;
+		margin: 35px auto 0;
+
+		font-size: 26px;
+		line-height: 1.4;
+	}
+		
+	/* ------- тренды -------- */
+	.trends-title {
+		margin: 40px 0 25px;
+	
+		font-size: 16px;
+	}
+
+	.trends-title::after {
+		margin: 6px auto 0;
+	}
+
+	.trend-post {
+		min-height: 230px;
+		width: calc(50% - 3px);
+		padding: 15px;
+	}
+		
+	.trend-post:nth-child(n + 3) {
+		margin-top: 4px;
+	}
+		
+	.trend-post-content {
+		padding: 28px 20px;
+	}
+			
+	.trend-post-title {
+		font-size: 16px;
+		line-height: 1.25;
+	}
+	
+	/* ------- основной контент -------- */
+	.page {
+		max-width: 640px;
+		padding: 42px 15px 0;
+		flex-wrap: wrap;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.content-post {
+		flex-wrap: wrap;
+		margin-bottom: 35px;
+	
+		border-bottom: 3px solid #eeeeee;
+	}
+	
+	.content-post-image {
+		min-width: 0%;
+		width: 100%;
+		margin-bottom: 12px;
+	}
+
+	.content-post-info {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.content-post-title {
+		margin: 8px 0 17px;
+
+		font-size: 16px;
+		line-height: 1.25;
+	}
+
+	.content-post-footnote {
+		margin-bottom: 15px;
+	}
+
+	.content-post-text {
+		margin-bottom: 5px;
+
+		font-size: 14px;
+	}
+
+	.content-post-text:last-child {
+		margin-bottom: 20px;
+	}
+	
+	/*-------боковая колонка страницы------*/
+	.sidebar {
+		width: 100%;
+		flex-shrink: 1;
+	}
+	
+	.sidebar-title {
+		margin-bottom: 25px;
+	
+		font-size: 16px;
+	}
+
+	.sidebar-section {
+		margin-bottom: 35px;
+	}
+
+	.sidebar-section:first-child {
+		margin-bottom: 60px;
+	}
+
+	.sidebar-element-info {
+		margin-left: 20px;
+	}
+
+	.sidebar-tag:last-child {
+		margin-right: 0;
+	}
+	
+	/* -------- магазин ------- */
+	.page-footnote {
+		max-width: 640px;
+		padding: 40px 15px 50px;
+	}
+
+	.shop-title {
+		font-size: 16px;
+	}
+
+	.good-card {
+		width: 100%;
+		margin-top: 27px;
+	}
+
+	.good-card-image {
+		margin-bottom: -38px;
+	}
+
+	.good-card-title {
+		font-size: 17px;
+	}
+	
+	/* ------ подвал ------- */
+	.footer {
+		margin-top: 45px;
+	}
+	
+	.socials {
+		margin-bottom: 45px;
+	}
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+	.trend-post {
+		min-height: 230px;
+		width: 100%;
+	}
+	
+	.trend-post:nth-child(n + 2) {
+		margin-top: 4px;
 	}
 }
