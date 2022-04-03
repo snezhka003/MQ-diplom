@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	/* outline: 1px solid red; */
 }
 
 @font-face {
@@ -50,6 +51,7 @@ select, textarea, input {
 
 .popup-container {
 	margin: auto;
+	width: 390px;
 }
 
 .popup-close-button {
@@ -70,7 +72,7 @@ select, textarea, input {
 }
 
 .popup-feedback {
-	width: 390px;
+	width: 100%;
 	padding: 50px 30px;
 
 	background-color: #ffffff;
@@ -1124,8 +1126,12 @@ select, textarea, input {
 
 @media (max-width: 640px) {
 	/* ------ popup -------- */
+	.popup-container {
+		min-width: 300px;
+		max-width: 330px;
+	}
+
 	.popup-feedback {
-		width: 330px;
 		padding: 25px 25px;
 	}
 
