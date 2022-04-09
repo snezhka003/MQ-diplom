@@ -946,7 +946,7 @@ select, textarea, input {
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+@media (min-width: 641px) and (max-width: 1023px) and (orientation: portrait), (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
 	.trend-post {
 		min-height: 247px;
 		width: calc(50% - 3px);
@@ -957,7 +957,7 @@ select, textarea, input {
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1199px), (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
 	/* ------ popup -------- */
 	.popup-title {
 		font-size: 18px;
@@ -1124,7 +1124,7 @@ select, textarea, input {
 	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px), (max-width: 767px) and (orientation: landscape) {
 	/* ------ popup -------- */
 	.popup-container {
 		min-width: 300px;
